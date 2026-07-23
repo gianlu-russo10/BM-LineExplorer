@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Ordini di Servizio - BM Driver Aid</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #FF5900;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Barra superiore */
+    .top-bar {
+      background: white;
+      width: 90%;
+      max-width: 900px;
+      margin-top: 40px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Tasto Home */
+    .back-box {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border: 2px solid #000;
+      border-radius: 8px;
+      cursor: pointer;
+      color: #000;
+      font-weight: bold;
+      background: #fff;
+      transition: 0.2s;
+    }
+
+    .back-box:hover {
+      background: #eaeaea;
+    }
+
+    .back-box svg {
+      stroke: #000;
+    }
+
+    .top-bar h2 {
+      margin: 0 auto;
+      font-size: 22px;
+      color: #000000;
+    }
+
+    /* Box ODS */
+    .ods-box {
+      background: white;
+      width: 90%;
+      max-width: 900px;
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .ods-box h3 {
+      margin: 0;
+      font-size: 22px;
+      color: #000;
+      text-align: center;
+    }
+
+    .ods-box hr {
+      border: none;
+      border-top: 2px solid #000;
+      margin: 15px 0;
+    }
+
+    .ods-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Stato box colorabile */
+    .state-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .state-vigore { background: #2ecc71; }   /* verde */
+    .state-revocato { background: #e74c3c; } /* rosso */
+    .state-sospeso { background: #f39c12; }  /* arancio */
+
+    .ods-prot {
+      text-align: right;
+      font-size: 16px;
+    }
+
+    h4 {
+      margin: 20px 0 5px 0;
+      font-size: 18px;
+    }
+
+    svg {
+      stroke: currentColor;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Barra superiore -->
+  <div class="top-bar">
+
+    <!-- Tasto Home -->
+    <div class="back-box" onclick="window.location.href='home.html'">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 12L12 3L21 12"></path>
+        <path d="M5 10V21H19V10"></path>
+      </svg>
+      Home
+    </div>
+
+    <!-- Titolo centrato -->
+    <h2>Bike Mobility - Driver Aid</h2>
+
+  </div>
+
+
+  <!-- ODS 1 - REVOCATO -->
+  <div class="ods-box">
+    <h3>Ordine di Servizio</h3>
+    <hr>
+
+    <div class="ods-header">
+
+      <div class="state-box state-revocato">
+        <!-- X -->
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="5" x2="19" y2="19"></line>
+          <line x1="19" y1="5" x2="5" y2="19"></line>
+        </svg>
+        REVOCATO
+      </div>
+
+      <div class="ods-prot">
+        prot. n. 001<br>
+        del 24/05/2026
+      </div>
+
+    </div>
+
+    <h4>Oggetto: Limitazione al transito su Via dei Mulini</h4>
+    <div>Si dispone, fino a prossima comunicazione, il divieto di transito a tutti i ciclomezzi sul marciapiede lato pari in via Dei Mulini a causa di vetri sulla sede di transito.
+<br><br>
+        Deviazione: V.le Resistenza - Via Fallaci - Via Collodi oppure Viale Trieste - Via Pedrazzini - Via Ungaretti - Via Svevo.</div>
+
+    <h4>Annotazioni:</h4>
+    <div>Revocato 10/06/2026</div>
+  </div>
+
+
+  <!-- ODS 2 - IN VIGORE -->
+  <div class="ods-box">
+    <h3>Ordine di Servizio</h3>
+    <hr>
+
+    <div class="ods-header">
+
+      <div class="state-box state-vigore">
+        <!-- Spunta -->
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="4 12 9 17 20 6"></polyline>
+        </svg>
+        IN VIGORE
+      </div>
+
+      <div class="ods-prot">
+        prot. n. 002<br>
+        del 10/06/2026
+      </div>
+
+    </div>
+
+    <h4>Oggetto: Divieto di transito sottopasso VALM</h4>
+    <div>Si dispone, fino a prossima comunicazione, il divieto di transito a tutti i ciclomezzi nel sottopassaggio Codogno VALM - S. Biagio dei Mille a causa di impedimenti di forza maggiore.
+        <br><br>
+        Deviazione: Sottopassaggio V.le Duca d'Aosta (Corsia pedonale)</div>
+
+    <h4>Annotazioni:</h4>
+    <div></div>
+  </div>
+
+
+  <!-- ODS 3 - SOSPESO -->
+  <div class="ods-box">
+    <h3>Ordine di Servizio</h3>
+    <hr>
+
+    <div class="ods-header">
+
+      <div class="state-box state-sospeso">
+        <!-- Timer -->
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="13" r="8"></circle>
+          <line x1="12" y1="3" x2="12" y2="5"></line>
+          <line x1="12" y1="13" x2="16" y2="11"></line>
+          <line x1="12" y1="13" x2="10" y2="8"></line>
+        </svg>
+        SOSPESO
+      </div>
+
+      <div class="ods-prot">
+        prot. n. 003<br>
+        del 14/06/2026
+      </div>
+
+    </div>
+
+    <h4>Oggetto: Vetri su sede stradale rotatoria C. Camairago</h4>
+    <div>Si da avviso, fino a prossima comunicazione coincidente con lo spazzamento stradale, di prestare attenzione durante l'uscita da Castelg. Camairago in direzione Mulazzana a causa di vetri ai margini della sede di transito.</div>
+
+    <h4>Annotazioni:</h4>
+    <div></div>
+  </div>
+
+</body>
+</html>
