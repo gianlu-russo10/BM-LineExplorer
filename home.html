@@ -60,7 +60,7 @@
       stroke: red;
     }
 
-    /* Box Linee */
+    /* Box generico */
     .line-box {
       background: white;
       width: 90%;
@@ -93,39 +93,48 @@
 <body>
 
   <!-- Barra superiore -->
-<div class="top-bar">
-  
-  <div>
-    <h2 style="margin: 0;">Bike Mobility - Driver Aid</h2>
-    <h4 style="margin: 5px 0 0 0; font-weight: normal; color: #444;">
-      Benvenuto
-    </h4>
-  </div>
+  <div class="top-bar">
+    <div>
+      <h2 style="margin: 0;">Bike Mobility - Driver Aid</h2>
+      <h4 style="margin: 5px 0 0 0; font-weight: normal; color: #444;">
+        Benvenuto
+      </h4>
+    </div>
 
-  <div class="logout-box" onclick="logout()">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
-      <polyline points="16 17 21 12 16 7"></polyline>
-      <line x1="21" y1="12" x2="9" y2="12"></line>
-    </svg>
-    Esci
+    <div class="logout-box" onclick="logout()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+        <polyline points="16 17 21 12 16 7"></polyline>
+        <line x1="21" y1="12" x2="9" y2="12"></line>
+      </svg>
+      Esci
+    </div>
   </div>
-
-</div>
 
 
   <!-- Box Linee -->
-  <div class="line-box" onclick="goToLine('linee.html')">
+  <div class="line-box" onclick="goToPage('linee.html')">
     <h3>Linee e fermate</h3>
   </div>
+
+  <!-- Box Turni Macchina -->
+  <div class="line-box" onclick="goToPage('TM.html')">
+    <h3>Turni Macchina</h3>
+  </div>
+
+  <!-- Box Ordini di Servizio -->
+  <div class="line-box" onclick="goToPage('OdS.html')">
+    <h3>Ordini di Servizio</h3>
+  </div>
+
 
   <script>
     function logout() {
       window.location.href = "index.html";
     }
 
-    function goToLine(url) {
+    function goToPage(url) {
       window.location.href = url;
     }
   </script>
