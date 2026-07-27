@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Linea e002 - BM Driver Aid</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #FF5900;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Barra superiore */
+    .top-bar {
+      background: white;
+      width: 90%;
+      max-width: 900px;
+      margin-top: 40px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Bottone Indietro */
+    .back-box {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border: 2px solid #000;
+      border-radius: 8px;
+      cursor: pointer;
+      color: #000;
+      font-weight: bold;
+      background: #fff;
+      width: 10%;
+      transition: 0.2s;
+    }
+
+    .back-box:hover {
+      background: #eaeaea;
+    }
+
+    .back-box svg {
+      stroke: #000;
+    }
+
+    .top-bar h2 {
+      margin: 0 auto;
+      font-size: 22px;
+      color: #000000;
+    }
+
+    .line-container {
+      background: white;
+      width: 90%;
+      max-width: 900px;
+      margin-top: 40px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .line-title {
+      font-size: 22px;
+      margin: 0;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border: 2px solid #000;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      background: #fff;
+      color: #000;
+    }
+
+    .main-hr {
+      border: none;
+      border-top: 2px solid #000;
+      margin: 20px 0 30px 0;
+    }
+
+    .schema-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    svg {
+      width: 450px;
+      transform: scale(1);
+      transform-origin: top left;
+    }
+
+    h4 {
+      margin: 20px 0 10px 0;
+      font-size: 18px;
+      color: #000;
+    }
+
+    .block-hr {
+      border: none;
+      border-top: 2px solid #000;
+      margin: 15px 0 25px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Barra superiore -->
+  <div class="top-bar">
+
+    <!-- Bottone Indietro -->
+    <div class="back-box" onclick="window.location.href='linee.html'">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+           stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+      Indietro
+    </div>
+
+    <!-- Titolo centrato -->
+    <h2>Bike Mobility - Driver Aid</h2>
+
+  </div>
+
+
+  <div class="line-container">
+
+    <!-- Titolo con badge -->
+    <h3 class="line-title">
+      <span class="badge">e002</span>
+      Codogno – Somaglia dev Casalpusterlengo
+    </h3>
+
+    <hr class="main-hr">
+
+    <!-- ===================== -->
+    <!-- BLOCCO A -->
+    <!-- ===================== -->
+    <h4>Codogno Autostazione - Somaglia Risorgimento</h4>
+
+    <div class="schema-wrapper">
+      <svg viewBox="0 0 600 820">
+        <line x1="100" y1="60" x2="100" y2="785" stroke="#FF5900" stroke-width="10" />
+
+        <circle cx="100" cy="60"  r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="65">CODOGNO - Autostazione</text>
+
+        <circle cx="100" cy="140" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="145">CODOGNO - V.le Volta/Trieste</text>
+
+        <circle cx="100" cy="220" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="225">CODOGNO - Via Leonardo</text>
+
+        <circle cx="100" cy="300" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="305">CODOGNO VALM</text>
+
+        <circle cx="100" cy="380" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="385">CODOGNO - S.BIAGIO V.le dei Mille</text>
+
+        <circle cx="100" cy="460" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="465">CODOGNO - Via delle Industrie (TMC)</text>
+
+        <circle cx="100" cy="540" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="545">CODOGNO - Loc. Mirandola</text>
+
+        <circle cx="100" cy="620" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="625">CODOGNO - Loc. MONTICCHIE</text>
+
+        <circle cx="100" cy="700" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="705">SOMAGLIA - Via Matteotti 13</text>
+
+        <circle cx="100" cy="780" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="785">SOMAGLIA - Via Risorgimento</text>
+        
+      </svg>
+    </div>
+
+    <hr class="block-hr">
+    
+    <h4>Somaglia Via Risorgimento - Casalpusterlengo FS</h4>
+
+    <div class="schema-wrapper">
+      <svg viewBox="0 0 600 600">
+        <line x1="100" y1="60" x2="100" y2="540" stroke="#FF5900" stroke-width="10" />
+
+        <circle cx="100" cy="60"  r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="65">SOMAGLIA - Via Risorgimento</text>
+
+        <circle cx="100" cy="140" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="145">CASALPUSTERLENGO - Tangenziale</text>
+
+        <circle cx="100" cy="220" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="225">CASALPUSTERLENGO - Via Fleming H</text>
+
+        <circle cx="100" cy="300" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="305">CASALPUSTERLENGO - V.le dei Cappuccini</text>
+
+        <circle cx="100" cy="380" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="385">CASALPUSTERLENGO - SS9/Cimitero</text>
+
+        <circle cx="100" cy="460" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="465">CASALPUSTERLENGO - XXV Aprile</text>
+
+        <circle cx="100" cy="540" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="545">CASALPUSTERLENGO FS</text>
+      </svg>
+    </div>
+
+    <hr class="block-hr">
+
+    <!-- BLOCCO B -->
+    <h4>Codogno Autostazione - Somaglia Risorgimento - Som. Loc. Gargatano</h4>
+
+    <div class="schema-wrapper">
+      <svg viewBox="0 0 600 900">
+        <line x1="100" y1="60" x2="100" y2="865" stroke="#FF5900" stroke-width="10" />
+
+        <circle cx="100" cy="60"  r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="65">CODOGNO - Autostazione</text>
+
+        <circle cx="100" cy="140" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="145">CODOGNO - V.le Volta/Trieste</text>
+
+        <circle cx="100" cy="220" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="225">CODOGNO - Via Leonardo</text>
+
+        <circle cx="100" cy="300" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="305">CODOGNO VALM</text>
+
+        <circle cx="100" cy="380" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="385">CODOGNO - S.BIAGIO V.le dei Mille</text>
+
+        <circle cx="100" cy="460" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="465">CODOGNO - Via delle Industrie (TMC)</text>
+        
+        <circle cx="100" cy="540" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="545">CODOGNO - Loc. Mirandola</text>
+
+        <circle cx="100" cy="620" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="625">CODOGNO - Loc. MONTICCHIE</text>
+        
+        <circle cx="100" cy="700" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="705">SOMAGLIA - Via Matteotti 13</text>
+
+        <circle cx="100" cy="780" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="785">SOMAGLIA - Via Risorgimento</text>
+        
+        <circle cx="100" cy="860" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+        <text x="120" y="865">SOMAGLIA - Loc. Gargatano</text>
+
+      </svg>
+    </div>
+
+    <hr class="block-hr">
+
+    <h4>Somaglia Via Risorgimento - Casalpusterlengo - Maiocca - Codogno Autostazione</h4>
+
+   <div class="schema-wrapper">
+  <svg viewBox="0 0 600 1000">
+    <line x1="100" y1="60" x2="100" y2="940" stroke="#FF5900" stroke-width="10" />
+
+    <circle cx="100" cy="60"  r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+    <text x="120" y="65">SOMAGLIA - Via Risorgimento</text>
+
+    <circle cx="100" cy="140" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+    <text x="120" y="145">CASALPUSTERLENGO - SP234/Tangenziale</text>
+
+    <circle cx="100" cy="220" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+    <text x="120" y="225">CASALPUSTERLENGO - Via Fleming H</text>
+
+    <circle cx="100" cy="300" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+    <text x="120" y="305">CASALPUSTERLENGO - V.le dei Cappuccini</text>
+
+    <circle cx="100" cy="380" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+    <text x="120" y="385">CASALPUSTERLENGO - SS9/Cimitero</text>
+
+    <circle cx="100" cy="460" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+    <text x="120" y="465">CASALPUSTERLENGO - XXV Aprile</text>
+
+    <circle cx="100" cy="540" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+    <text x="120" y="545">C.na Cavecchia</text>
+
+    <circle cx="100" cy="620" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+    <text x="120" y="625">MAIOCCA - Audio OHM</text>
+
+    <circle cx="100" cy="700" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+    <text x="120" y="705">MAIOCCA - P.za S.Bernardino</text>
+
+    <circle cx="100" cy="780" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+    <text x="120" y="785">C.na S. Paolo</text>
+
+    <circle cx="100" cy="860" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+    <text x="120" y="865">CODOGNO - V.le Volta/Don Minzoni</text>
+
+    <circle cx="100" cy="940" r="10" fill="#fff" stroke="#FF5900" stroke-width="4" />
+    <text x="120" y="945">CODOGNO - Autostazione</text>
+
+    </svg>
+   </div>
+
+  </div>
+
+</body>
+</html>
